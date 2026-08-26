@@ -1,0 +1,30 @@
+AddTextEntry("WEAPON_AK47", "AK-47")
+AddTextEntry("WEAPON_GALILAR", "Galilar Pistol")
+AddTextEntry("WEAPON_45SWITCH", "45SWITCH")
+AddTextEntry("WEAPON_BOUNCEBACK2024", "BOUNCEBACK2024")
+AddTextEntry("WEAPON_GLEEJAYFN", "Jay's FN Switch")
+AddTextEntry("WEAPON_BOUNCEBACK100", "bounceback100")
+AddTextEntry("WEAPON_KGSWITCH", "KGSWITCH")
+AddTextEntry("WEAPON_CHRARO", "CHRARO")
+AddTextEntry("WEAPON_ZIPFN", "zipfn")
+AddTextEntry("WEAPON_FNBLACKZIP", "fnblackzip")
+AddTextEntry("WEAPON_BPSUNIT", "bpsunit")
+AddTextEntry("WEAPON_GIRLS", "girls")
+AddTextEntry("WEAPON_FULLYTAC17", "w_pi_fullytac17")
+AddTextEntry("WEAPON_TACMP5", "TACMP5")
+AddTextEntry("WEAPON_HEAVENSPLITTER", "heavensplitter")
+AddTextEntry("WEAPON_PUMPKIN", "pumpkin")
+AddTextEntry("WEAPON_PAINTBALL", "paintball")
+AddTextEntry("WEAPON_NYCTRAPPER", "nyctrapper")
+AddTextEntry("WEAPON_R4CST", "w_ar_r4cst")
+AddTextEntry("WEAPON_IBAK", "IBAK")
+AddTextEntry("WEAPON_HUFFNPUFF", "HUFFNPUFF")
+AddTextEntry("WEAPON_HUFF", "HUFF")
+AddTextEntry("WEAPON_M4HYPERBEAST", "M4HYPERBEAST")
+AddTextEntry("WEAPON_HEADSHOTM4", "HEADSHOTM4")
+AddTextEntry("WEAPON_GURA", "gura")
+
+
+
+
+
