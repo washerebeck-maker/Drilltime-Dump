@@ -1,0 +1,60 @@
+shared_script "@ReaperV4/imports/bypass.lua"
+shared_script "@ReaperV4/imports/bypass_s.lua"
+shared_script "@ReaperV4/imports/bypass_c.lua"
+lua54 "yes" -- needed for Reaper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fx_version 'adamant'
+
+game 'gta5'
+
+description 'ESX Ambulance Job'
+
+lua54 'yes'
+version '1.8.5'
+
+shared_scripts { 
+	'@es_extended/imports.lua',
+	'@es_extended/locale.lua',
+	'locales/*.lua',
+	'@ox_lib/init.lua',
+	'config.lua'
+}
+
+
+server_scripts {
+	'@oxmysql/lib/MySQL.lua',
+	'server/main.lua'
+}
+
+client_scripts {
+	'client/main.lua',
+	'client/job.lua',
+	'client/vehicle.lua',
+}
+
+ui_page 'nui/index.html'
+files { 'nui/*', 'nui/**/*' }
+
