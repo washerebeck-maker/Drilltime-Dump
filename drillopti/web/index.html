@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPS Booster</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: transparent !important;
+            background: transparent !important;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="title-block">
+                <i class="fa-solid fa-microchip"></i>
+                <div>
+                    <h1>Drilltime System Optimizer</h1>
+                    <p>discord.gg/drilltime</p>
+                </div>
+            </div>
+            <div class="close-btn" id="closeMenu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </header>
+
+        <main>
+            <div class="section-title">Entities & World</div>
+            <div class="grid">
+                <div class="card" data-option="peds">
+                    <div class="icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="info">
+                        <h3>Peds</h3>
+                        <span>Optimize</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="vehicles">
+                    <div class="icon"><i class="fa-solid fa-car"></i></div>
+                    <div class="info">
+                        <h3>Vehicles</h3>
+                        <span>Optimize</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="objects">
+                    <div class="icon"><i class="fa-solid fa-cubes"></i></div>
+                    <div class="info">
+                        <h3>Objets</h3>
+                        <span>Optimize</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+            </div>
+
+            <div class="section-title">Visuals & Effects</div>
+            <div class="grid">
+                <div class="card" data-option="particles">
+                    <div class="icon"><i class="fa-solid fa-wind"></i></div>
+                    <div class="info">
+                        <h3>Particles</h3>
+                        <span>Delete (suggested)</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="shadows">
+                    <div class="icon"><i class="fa-solid fa-cloud-moon"></i></div>
+                    <div class="info">
+                        <h3>Shadows</h3>
+                        <span>Disabled (suggested)</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="lights">
+                    <div class="icon"><i class="fa-regular fa-lightbulb"></i></div>
+                    <div class="info">
+                        <h3>Lights</h3>
+                        <span>Simplify</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="rain">
+                    <div class="icon"><i class="fa-solid fa-cloud-rain"></i></div>
+                    <div class="info">
+                        <h3>Rain/Wind</h3>
+                        <span>Disable (suggested)</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="lowTexture">
+                    <div class="icon"><i class="fa-solid fa-image"></i></div>
+                    <div class="info">
+                        <h3>Textures Low</h3>
+                        <span>Optimizes textures (suggested)</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+            </div>
+
+            <div class="section-title">Cleaning (Misc)</div>
+            <div class="grid">
+                <div class="card" data-option="broken">
+                    <div class="icon"><i class="fa-solid fa-wine-glass-empty"></i></div>
+                    <div class="info">
+                        <h3>Broken Glass</h3>
+                        <span>Remove</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="ped">
+                    <div class="icon"><i class="fa-solid fa-shirt"></i></div>
+                    <div class="info">
+                        <h3>Blood/Dirt</h3>
+                        <span>Clean</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="card" data-option="unnecessary">
+                    <div class="icon"><i class="fa-solid fa-trash-can"></i></div>
+                    <div class="info">
+                        <h3>Miscellaneous</h3>
+                        <span>Optimizations</span>
+                    </div>
+                    <div class="status-dot"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
