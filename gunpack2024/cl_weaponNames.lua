@@ -1,0 +1,12 @@
+AddTextEntry("WEAPON_gfxswitch1", "gfxswitch1")
+AddTextEntry("WEAPON_gfxswitch2", "gfxswitch2")
+AddTextEntry("WEAPON_gfxswitch3", "gfxswitch3")
+AddTextEntry("WEAPON_GFXTWO", "GFXTWO")
+AddTextEntry("WEAPON_GREENMK47", "GREENMK47")
+AddTextEntry("WEAPON_XM4DRILL", "xm4drill")
+AddTextEntry("WEAPON_KSVDRILL", "ksvdrill")
+AddTextEntry("WEAPON_M4A1SPURPLE", "M4A1SPURPLE")
+AddTextEntry("WEAPON_PURPLEVANDAL", "PURPLEVANDAL")
+AddTextEntry("WEAPON_SUPERI25", "SUPERI25")
+AddTextEntry("WEAPON_BERSERKAP", "BERSERKAP")
+
