@@ -1,0 +1,19 @@
+shared_script "@ReaperV4/imports/bypass.lua"
+shared_script "@ReaperV4/imports/bypass_s.lua"
+shared_script "@ReaperV4/imports/bypass_c.lua"
+lua54 "yes" -- needed for Reaper
+
+fx_version 'adamant'
+lua54 'yes'
+game 'gta5'
+version '1.10.5'
+author 'ESX-Framework'
+description 'Official NUI Notification system for ESX'
+shared_script '@es_extended/imports.lua'
+client_scripts { 'Notify.lua' }
+ui_page 'nui/index.html'
+files {
+    'nui/index.html',
+    'nui/js/*.js',
+    'nui/css/*.css',
+}
