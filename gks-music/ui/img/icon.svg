@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="TRENCH FM">
+    <defs>
+        <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#8B5CF6" />
+            <stop offset="0.55" stop-color="#A855F7" />
+            <stop offset="1" stop-color="#E040FB" />
+        </linearGradient>
+
+        <radialGradient id="cone" cx="50%" cy="46%" r="58%">
+            <stop offset="0" stop-color="#2A1042" />
+            <stop offset="0.62" stop-color="#170B26" />
+            <stop offset="1" stop-color="#0C0616" />
+        </radialGradient>
+
+        <pattern id="grille" width="13" height="13" patternUnits="userSpaceOnUse">
+            <circle cx="6.5" cy="6.5" r="1.5" fill="#FFFFFF" fill-opacity="0.16" />
+        </pattern>
+
+        <clipPath id="plate">
+            <rect width="512" height="512" rx="116" />
+        </clipPath>
+    </defs>
+
+    <g clip-path="url(#plate)">
+        <rect width="512" height="512" fill="url(#skin)" />
+        <rect width="512" height="512" fill="url(#grille)" />
+
+        <!-- Speaker cone: the object the app is imitating. -->
+        <circle cx="256" cy="256" r="150" fill="url(#cone)" />
+        <circle cx="256" cy="256" r="150" fill="none" stroke="#FFFFFF" stroke-opacity="0.28" stroke-width="6" />
+        <circle cx="256" cy="256" r="108" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4" />
+        <circle cx="256" cy="256" r="70" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="4" />
+        <circle cx="256" cy="256" r="34" fill="#FFFFFF" fill-opacity="0.94" />
+        <circle cx="256" cy="256" r="12" fill="#170B26" />
+    </g>
+
+    <rect x="1.5" y="1.5" width="509" height="509" rx="114.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="3" />
+</svg>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>DRILLTIME FM</title>
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    <div class="app">
+
+        <header class="topbar">
+            <div class="status" id="status" data-live="false">
+                <span class="status-dot"></span>
+                <span class="status-label" id="statusLabel">Off air</span>
+            </div>
+            <div class="wordmark" id="wordmark">DRILLTIME<em>FM</em></div>
+        </header>
+
+        <main class="views">
+
+            <!-- PLAY ---------------------------------------------------- -->
+            <section class="view is-active" data-view="play">
+                <div class="stage">
+                    <div class="bloom" id="bloom" aria-hidden="true"></div>
+                    <div class="deck" id="deck" data-state="idle">
+                        <div class="deck-art" id="deckArt"></div>
+                        <div class="deck-grille" aria-hidden="true"></div>
+                        <div class="deck-idle">
+                            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8.25" stroke="currentColor" stroke-width="1.4" />
+                                <circle cx="12" cy="12" r="2.1" stroke="currentColor" stroke-width="1.4" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track">
+                    <h1 class="track-title" id="trackTitle">Nothing playing</h1>
+                    <p class="track-sub" id="trackSub">Paste a link to start</p>
+                </div>
+
+                <div class="progress" id="progress">
+                    <div class="progress-rail">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-time mono">
+                        <span id="timeNow">0:00</span>
+                        <span id="timeTotal">--:--</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn-play" id="btnPlay" type="button" disabled aria-label="Play">
+                        <svg class="ico-play" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 5.5v13l11-6.5z" fill="currentColor" />
+                        </svg>
+                        <svg class="ico-pause" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 5.5h3v13H8zM13 5.5h3v13h-3z" fill="currentColor" />
+                        </svg>
+                    </button>
+                    <button class="btn-ghost" id="btnStop" type="button" disabled aria-label="Stop">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="7" y="7" width="10" height="10" rx="1.6" fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="linkbar" id="linkForm" autocomplete="off">
+                    <input
+                        id="linkInput"
+                        type="text"
+                        placeholder="Paste a YouTube link"
+                        spellcheck="false"
+                        autocapitalize="off"
+                        aria-label="Link to play" />
+                    <button type="submit" id="linkGo">Play</button>
+                </form>
+            </section>
+
+            <!-- NEARBY -------------------------------------------------- -->
+            <section class="view" data-view="nearby">
+                <p class="eyebrow">Who you can hear</p>
+                <ul class="nearby" id="nearbyList"></ul>
+                <div class="empty" id="nearbyEmpty">
+                    <p>Nobody near you is playing anything.</p>
+                </div>
+            </section>
+
+            <!-- SETTINGS ------------------------------------------------ -->
+            <section class="view" data-view="settings">
+                <p class="eyebrow">What you hear</p>
+                <div class="card">
+                    <div class="row">
+                        <div class="row-head">
+                            <span>Volume</span>
+                            <span class="mono" id="masterVal">100%</span>
+                        </div>
+                        <input type="range" id="master" min="0" max="100" step="1" value="100" aria-label="Your listening volume" />
+                    </div>
+                    <div class="row row-split">
+                        <div>
+                            <p class="row-title">Mute everyone</p>
+                            <p class="row-note">Silences every other player's music.</p>
+                        </div>
+                        <button class="switch" id="muteAll" type="button" role="switch" aria-checked="false" aria-label="Mute everyone">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <nav class="tabs" id="tabs">
+            <button type="button" data-tab="play" class="is-active">Play</button>
+            <button type="button" data-tab="nearby">
+                Nearby<span class="badge" id="nearbyBadge" hidden></span>
+            </button>
+            <button type="button" data-tab="settings">Settings</button>
+        </nav>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
