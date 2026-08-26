@@ -1,0 +1,16 @@
+Locales['en'] = {
+  ['ebay_nomoney']           = 'you dont have enough money',
+  ['ebay_itemadd']           = '~r~You cannot add more items than you have',
+  ['ebay_itemsell']           = '~r~You cant sell more than you own',
+  ['ebay_Takeout']           = 'You can\' t take out more than you own',
+  ['ebay_sameitem']          = 'We already have this item in our shop',
+  ['ebay_appname']           = 'MarketPlace',
+  ['ebay_store']             = 'Store',
+  ['ebay_piece']             = 'piece',
+  ['ebay_price']             = 'price',
+  ['ebay_storeadd']          = 'Add item to store',
+  ['ebay_blacklist']         = 'The item you want to add is a black list.',
+  ['ebay_exploitnotowner']   = 'The owner of the product and the item purchased are not equal',
+  ['ebay_exploitmoney']      = 'Tried to change the prices of products',
+  ['ebay_pstore']             = 'Purchased',
+}
