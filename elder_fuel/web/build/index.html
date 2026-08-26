@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:," />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elder Fuel</title>
+    <script>
+      // FiveM NUI serves us at `cfx-nui-<resource>/web/build/index.html`.
+      // SvelteKit's client router only knows the `/` route and would 404 on
+      // any other pathname. Two steps:
+      //   1. Pin a <base> to the document's original directory so relative
+      //      asset URLs (./_app/...) keep resolving correctly.
+      //   2. Rewrite the URL to `/` so the router matches the prerendered page.
+      (function () {
+        var base = document.createElement('base');
+        base.href = location.href.replace(/[^\/]*$/, '');
+        document.head.insertBefore(base, document.head.firstChild);
+        history.replaceState(null, '', '/');
+      })();
+    </script>
+    <link href="./_app/immutable/entry/start.DmhnLvzH.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DEiszFux.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/SY2EPv_P.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/_bquXVZa.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.BxlfBzGT.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BbFx9hFU.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Dt8zhq3-.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/C5unMnsn.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/ngHXHSgf.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.jfySjHAC.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.R8wx6Q7k.js" rel="modulepreload">
+		
+		<link href="./_app/immutable/assets/2.B36RfpDD.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_17p7ic2 = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.DmhnLvzH.js"),
+						import("./_app/immutable/entry/app.BxlfBzGT.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+/* Base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  bottom: 6vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36vh;
+  opacity: 0;
+  transition: opacity .25s ease;
+  z-index: 999999;
+}
+#progress-track {
+  width: 100%;
+  height: 3vh;
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 1vh;
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+}
+#progress-fill {
+  width: 0%;
+  height: 100%;
+  background: rgb(85, 3, 85);
+  transition: width .15s linear;
+  border-radius: 1vh;
+}
+#progress-text {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* CAPTCHA — Minimal Modern Purple */
+#captcha-container {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+/*   background: rgba(0,0,0,0.45); */
+  z-index: 1000000;
+  /* backdrop-filter: blur(4px); */
+}
+
+#captcha-box {
+  background: rgba(20, 20, 28, 0.95);
+  border-radius: 10px;
+  padding: 22px 20px;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+#captcha-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+/* Prompt */
+#captcha-prompt {
+  font-size: 13px;
+  color: #cfcfcf;
+}
+
+/* Grid of options */
+#captcha-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+/* Clickable icons */
+.captcha-option {
+  font-size: 28px;
+  background: #2a2a33;
+  border-radius: 8px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background .15s, border-color .15s;
+}
+
+.captcha-option:hover {
+  background: #3a3a45;
+  border-color: rgb(85, 3, 85);
+}
+

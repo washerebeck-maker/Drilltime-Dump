@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  font-family: 'Press Start 2P', monospace;
+}
+
+.nokia-phone {
+  position: fixed;
+  bottom: -600px; /* hidden below screen */
+  right: 20px;
+  width: 300px;
+  height: 500px;
+  background-image: url('assets/phone.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: bottom 0.5s ease-in-out;
+  z-index: 999;
+}
+
+/* When visible, slide up */
+.nokia-phone.visible {
+  bottom: 20px;
+}
+
+/* Screen overlay */
+.screen {
+  position: absolute;
+  top: 150px;
+  left: 85px;
+  width: 130px;
+  height: 80px;
+  border-radius: 4px;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.screen::-webkit-scrollbar {
+  display: none;
+}
+
+/* Menu buttons */
+.menu-btn {
+  background: none;
+  color: black;
+  font-size: 12px;
+  border: none;
+  padding: 3px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-btn:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
